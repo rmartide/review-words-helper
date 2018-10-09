@@ -1,26 +1,21 @@
-# review-words-helper
+# learning-support-tool
 
-## Project setup
-```
-npm install
-```
+## Idea behind the project
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+I'm studying german and I have to review the words so to do it I use a .txt and it's annoying.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+I want to do a simple app so I can:
 
-### Run your tests
-```
-npm run test
-```
+* Add words, translations and phrases
 
-### Lints and fixes files
-```
-npm run lint
-```
+* Hide one of the two so you don't pick on the other one while reviewing
+
+* Add verbs and conjugation
+
+* Add categories (adjectives, prepositions, clothing, food...)
+
+* Gramatical rules
+
+* Declination of pronouns and adjectives
+
+In summary, a tool to learn a new language easier
