@@ -1,12 +1,6 @@
 <template>
   <div>
-      <h1>Hello App!</h1>
-      <p>
-        <!-- use router-link component for navigation. -->
-        <!-- specify the link by passing the `to` prop. -->
-        <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-        <router-link to="/misc">Show misc</router-link>
-      </p>
+      <Navbar></Navbar>
       <!-- route outlet -->
       <!-- component matched by the route will render here -->
       <router-view></router-view>
@@ -15,11 +9,13 @@
 
 <script>
 import Misc from '@components/Misc.vue';
+import Navbar from '@components/Navbar.vue';
 
 export default {
   name: "app",
   components: {
-    Misc
+    Misc,
+    Navbar
   }
 };
 </script>
