@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Misc from './components/Misc.vue'
+import Misc from '@components/Misc.vue';
 
 export default {
   name: "app",

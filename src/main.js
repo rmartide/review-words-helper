@@ -1,12 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
-import Misc from './components/Misc.vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import App from './App.vue';
+import Misc from '@components/Misc.vue';
+import VueRouter from 'vue-router';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 Vue.use(VueRouter)
-
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
