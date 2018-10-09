@@ -14,13 +14,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-                <router-link class="nav-item nav-link" to="/misc">Show misc</router-link>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                <router-link
+                    class="nav-item nav-link"
+                    :class="{active: path.route === $route.path}"
+                    v-for="path of paths"
+                    :to="path.route"
+                    :key="path.name"
+                >{{path.name}}</router-link>
             </div>
         </div>
     </nav>
@@ -28,7 +28,15 @@
 
 <script>
 export default {
-    name: 'Navbar'
+  name: "Navbar",
+  props: {
+    paths: {
+      type: Array
+    }
+  },
+  mounted() {
+    console.log(this.paths);
+  }
 };
 </script>
 
