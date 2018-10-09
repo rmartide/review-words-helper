@@ -10,12 +10,14 @@ I want to do a simple app so I can:
 
 * Hide one of the two so you don't pick on the other one while reviewing
 
-* Add verbs and conjugation
+* Verbs and conjugation
 
-* Add categories (adjectives, prepositions, clothing, food...)
+* Categories (adjectives, prepositions, clothing, food...)
 
 * Gramatical rules
 
 * Declination of pronouns and adjectives
+
+* Helpful links
 
 In summary, a tool to learn a new language easier
