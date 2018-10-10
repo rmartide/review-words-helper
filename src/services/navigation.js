@@ -1,6 +1,8 @@
 import Misc from '@components/Misc.vue';
+import Review from '@components/Review.vue';
+
 
 export const routes = [
     { path: '/misc', component: Misc, name: 'Misc' },
-    { path: '/test', component: Misc, name: 'Test' }
+    { path: '/review', component: Review, name: 'Review' }
 ]

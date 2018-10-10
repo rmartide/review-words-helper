@@ -6,7 +6,7 @@ I'm studying german and I have to review the words so to do it I use a .txt and 
 
 I want to do a simple app so I can:
 
-* Add words (singular and plural), translations and phrases
+* Add words (singular and plural), translations and phrases and gender
 
 * Hide one of the two so you don't pick on the other one while reviewing
 
