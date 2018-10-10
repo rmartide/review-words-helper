@@ -16,11 +16,11 @@
             <div class="navbar-nav">
                 <router-link
                     class="nav-item nav-link"
-                    :class="{active: path.route === $route.path}"
-                    v-for="path of paths"
-                    :to="path.route"
-                    :key="path.name"
-                >{{path.name}}</router-link>
+                    :class="{active: route.path === $route.path}"
+                    v-for="route of routes"
+                    :to="route.path"
+                    :key="route.name"
+                >{{route.name}}</router-link>
             </div>
         </div>
     </nav>
@@ -30,12 +30,9 @@
 export default {
   name: "Navbar",
   props: {
-    paths: {
+    routes: {
       type: Array
     }
-  },
-  mounted() {
-    console.log(this.paths);
   }
 };
 </script>

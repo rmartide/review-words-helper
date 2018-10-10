@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar :paths="paths"></Navbar>
+    <Navbar :routes="routes"></Navbar>
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
     <div class="container-fluid">
@@ -12,7 +12,7 @@
 <script>
 import Misc from "@components/Misc.vue";
 import Navbar from "@components/Navbar.vue";
-import { paths } from "@services/navigation";
+import { routes } from "@services/navigation";
 
 export default {
   name: "app",
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      paths
+      routes
     }
   }
 };
