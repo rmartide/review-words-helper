@@ -9,6 +9,12 @@
                     <hr>
                 </div>
             </div>
+            <div v-show="showWords">
+                <div v-for="(word, index) of words" :key="`${index}-${word}`">
+                    <button >Show</button>
+                    <hr>
+                </div>
+            </div>
         </div>
         <div class="col-auto">
             <CheckForm id="translationsCheck" text="Hide translations" v-model="showTranslations"/>
