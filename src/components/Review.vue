@@ -39,6 +39,7 @@
                  -->
                  <!-- Since there's no point hiding both it should use a radio or just one check but
                  double checkbox it's pointless -->
+                 <!-- It needs more padding when hovering -->
                     <ShowValue :word="translation.join(', ')"></ShowValue>
                     <hr>
                 </div>
