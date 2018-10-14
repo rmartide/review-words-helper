@@ -1,6 +1,6 @@
 <template>
-    <div class="row">
-        <div class="col-auto">
+    <div class="row no-gutters">
+        <div class="col-2">
             <CheckForm id="wordsCheck" text="Hide words" v-model="showWords"/>
             <hr>
             <div v-show="!showWords">
@@ -11,7 +11,7 @@
             </div>
             <div v-show="showWords">
                 <div v-for="(word, index) of words" :key="`${index}-${word}`">
-                    <button >Show</button>
+                    <ShowValue :word="word"></ShowValue>
                     <hr>
                 </div>
             </div>
@@ -28,6 +28,21 @@
                     <hr>
                 </div>
             </div>
+            <div v-show="showTranslations">
+                <div
+                    v-for="(translation, index) of translations"
+                    :key="`${index}-${translation[0]}`"
+                >
+                <!-- Try scoped-slots to add the button as a children of the component -->
+                <!-- At the end of the day this approach adds watchers so maybe the swapping
+                between the word and the button should use just one loop, v-show on the children
+                 -->
+                 <!-- Since there's no point hiding both it should use a radio or just one check but
+                 double checkbox it's pointless -->
+                    <ShowValue :word="translation.join(', ')"></ShowValue>
+                    <hr>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -35,6 +50,7 @@
 <script>
 import { mockedDictionary } from "@services/mock-data";
 import CheckForm from "@components/CheckForm.vue";
+import ShowValue from "@components/ShowValue.vue";
 
 export default {
   name: "Review",
@@ -52,7 +68,8 @@ export default {
     }
   },
   components: {
-    CheckForm
+    CheckForm,
+    ShowValue
   }
 };
 </script>
