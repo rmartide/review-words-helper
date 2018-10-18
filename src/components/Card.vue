@@ -1,13 +1,17 @@
 <template>
-    <vue-fragment>
-        <div>TOP</div>
-    </vue-fragment>
+    <div>TOP</div>
 </template>
 
 <script>
 
 export default {
-    name: 'Card'
+    name: 'Card',
+    props: ['word', 'translation'],
+    methods: {
+        turn() {
+            // Turn the card
+        }
+    }
 }
 </script>
 
