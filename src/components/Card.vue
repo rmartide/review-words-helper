@@ -1,11 +1,12 @@
 <template>
-    <div class="scene">
-        <div class="rwh-card">
-            <div class="rwh-card__face card__face--front">
+    <div class="scene" @mouseover="flip=true" @mouseout="flip=false">
+        <div class="rwh-card" :class="{ 'is-flipped': flip}">
+            <div class="rwh-card__face rwh-card__face--front">
                 FRONT
             </div>
-            <div class="rwh-card__face card__face--back">
-                BACK</div>
+            <div class="rwh-card__face rwh-card__face--back">
+                BACK
+            </div>
         </div>
     </div>
 </template>
@@ -15,6 +16,11 @@
 export default {
     name: 'Card',
     props: ['word', 'translation'],
+    data() {
+        return {
+            flip: false
+        }
+    },
     methods: {
         turn() {
             // Turn the card
@@ -30,7 +36,7 @@ export default {
   border: 1px solid black;
   border-radius: 10px;
   position: relative;
-  transition: transform 1s;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
 
   &__face {
@@ -40,11 +46,9 @@ export default {
     backface-visibility: hidden;
 
     &--front {
-      background: red;
     }
 
     &--back {
-      background: blue;
       transform: rotateY(180deg);
     }
   }
@@ -58,7 +62,11 @@ export default {
 .scene {
   height: 300px;
   width: 200px;
+  margin: auto;
   perspective: 600px;
+}
+.is-flipped {
+  transform: rotateY(180deg);
 }
 </style>
 
