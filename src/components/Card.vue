@@ -44,6 +44,7 @@ export default {
     width: 100%;
     position: absolute;
     backface-visibility: hidden;
+    text-align: center;
 
     &--front {
     }
