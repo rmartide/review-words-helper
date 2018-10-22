@@ -5,6 +5,12 @@ export const mockedData = [
     { word: 'ausgezeichnet', translations: ['excelente', 'magnífico'] },
     { word: 'tatsächlich', translations: ['efectivamente'] },
     { word: 'begeister', translations: ['entusiasmado', 'impresionado'] },
+    { word: 'hoffen', translations: ['esperar'] },
+    { word: 'finden', translations: ['encontrar'] },
+    { word: 'treffen', translations: ['encontrar'] },
+    { word: 'suchen', translations: ['buscar'] },
+    { word: 'erweitern', translations: ['alargar', 'dilatar', 'estirar'] },
+
     // { word: '', translations: [''] },
 ]
 
