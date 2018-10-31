@@ -4,12 +4,11 @@
         <div class="row no-gutters">
             <div class="col-2">
                 <hr>
-                <div v-show="!showWords">
-                    <div v-for="(word, index) of words" :key="`${index}-${word}`">
-                        {{word}}
-                        <hr>
-                    </div>
-                </div>
+                <Words :showWords="!showWords" :words="words">
+                    <template slot-scope="scope">
+                        {{scope.word}}
+                    </template>
+                </Words>
                 <div v-show="showWords">
                     <div v-for="(word, index) of words" :key="`${index}-${word}`">
                         <ShowValue :word="word"></ShowValue>
@@ -47,6 +46,7 @@ import { mockedDictionary } from "@services/mock-data";
 import CheckForm from "@components/CheckForm.vue";
 import ShowValue from "@components/ShowValue.vue";
 import RadioContainer from "@components/RadioContainer.vue";
+import Words from "@components/Words.vue";
 
 export default {
     name: "Review",
@@ -81,7 +81,8 @@ export default {
     components: {
         CheckForm,
         ShowValue,
-        RadioContainer
+        RadioContainer,
+        Words
     }
 };
 </script>
