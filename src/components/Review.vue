@@ -1,10 +1,6 @@
 <template>
-    <div>
-        <div class="radio-container">
-            <RadioForm id="review-radio-both" :name="name" value="both" text="Show both" v-model="radioValue" />
-            <RadioForm id="review-radio-words" :name="name" value="words" text="Hide words" v-model="radioValue" />
-            <RadioForm id="review-radio-translations" :name="name" value="translations" text="Hide translations" v-model="radioValue" />
-        </div>
+    <div class="review-container">
+        <RadioContainer :name="name" v-model="radioValue"/>
         <div class="row no-gutters">
             <div class="col-2">
                 <hr>
@@ -50,7 +46,7 @@
 import { mockedDictionary } from "@services/mock-data";
 import CheckForm from "@components/CheckForm.vue";
 import ShowValue from "@components/ShowValue.vue";
-import RadioForm from "@components/RadioForm.vue";
+import RadioContainer from "@components/RadioContainer.vue";
 
 export default {
     name: "Review",
@@ -71,7 +67,7 @@ export default {
         }
     },
     watch: {
-        radioValue(newValue, oldValue) {
+        radioValue(newValue) {
             switch (newValue) {
                 case 'both': this.showWords = this.showTranslations = false;
                     break;
@@ -85,17 +81,10 @@ export default {
     components: {
         CheckForm,
         ShowValue,
-        RadioForm
+        RadioContainer
     }
 };
 </script>
 
-<style lang="scss">
-.radio-container {
-  display: flex;
-  flex-direction: row;
-  .form-check {
-      margin-right: 30px;
-  }
-}
+<style>
 </style>
