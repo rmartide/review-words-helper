@@ -1,8 +1,8 @@
 <template>
-    <div class="radio-container">
-        <RadioForm id="review-radio-both" :name="name" value="both" text="Show both" v-model="rValue" @change="updateValue"/>
-        <RadioForm id="review-radio-words" :name="name" value="words" text="Hide words" v-model="rValue" @change="updateValue"/>
-        <RadioForm id="review-radio-translations" :name="name" value="translations" text="Hide translations" v-model="rValue" @change="updateValue"/>
+    <div class="radio-container" @change="updateValue">
+        <RadioForm id="review-radio-both" :name="name" value="both" text="Show both" v-model="rValue"/>
+        <RadioForm id="review-radio-words" :name="name" value="words" text="Hide words" v-model="rValue" />
+        <RadioForm id="review-radio-translations" :name="name" value="translations" text="Hide translations" v-model="rValue" />
     </div>
 </template>
 
