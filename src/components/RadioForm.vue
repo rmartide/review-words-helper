@@ -1,6 +1,6 @@
 <template>
     <div class="form-check">
-        <input class="form-check-input" type="radio" :name="name" :id="id" :value="value" @change="$emit('change',value)">
+        <input class="form-check-input" type="radio" :name="name" :id="id" :value="value" @change="$emit('change',value)" :checked="value === checked">
         <label class="form-check-label" :for="id">
             {{text}}
         </label>
