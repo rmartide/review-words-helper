@@ -1,41 +1,14 @@
 <template>
     <div class="review-container">
-        <RadioContainer :name="name" v-model="radioValue"/>
+        <RadioContainer :name="name" v-model="radioValue" />
         <div class="row no-gutters">
             <div class="col-2">
                 <hr>
-                <Words :showWords="!showWords" :words="words">
-                    <template slot-scope="scope">
-                        {{scope.word}}
-                    </template>
-                </Words>
-                <div v-show="showWords">
-                    <div v-for="(word, index) of words" :key="`${index}-${word}`">
-                        <ShowValue :word="word"></ShowValue>
-                        <hr>
-                    </div>
-                </div>
+                <WordsContainer :showWords="showWords" :words="words"></WordsContainer>
             </div>
             <div class="col-3">
                 <hr>
-                <div v-show="!showTranslations">
-                    <div v-for="(translation, index) of translations" :key="`${index}-${translation[0]}`">
-                        {{translation | join}}
-                        <hr>
-                    </div>
-                </div>
-                <div v-show="showTranslations">
-                    <div v-for="(translation, index) of translations" :key="`${index}-${translation[0]}`">
-                        <!-- Try scoped-slots to add the button as a children of the component -->
-                        <!-- At the end of the day this approach adds watchers so maybe the swapping
-                between the word and the button should use just one loop, v-show on the children
-                 -->
-                        
-                        <!-- It needs more padding when hovering -->
-                        <ShowValue :word="translation.join(', ')"></ShowValue>
-                        <hr>
-                    </div>
-                </div>
+                <TranslationsContainer :showTranslations="showTranslations" :translations="translations"></TranslationsContainer>
             </div>
         </div>
     </div>
@@ -44,9 +17,9 @@
 <script>
 import { mockedDictionary } from "@services/mock-data";
 import CheckForm from "@components/CheckForm.vue";
-import ShowValue from "@components/ShowValue.vue";
 import RadioContainer from "@components/RadioContainer.vue";
-import Words from "@components/Words.vue";
+import WordsContainer from "@components/WordsContainer.vue";
+import TranslationsContainer from "@components/TranslationsContainer.vue";
 
 export default {
     name: "Review",
@@ -80,9 +53,9 @@ export default {
     },
     components: {
         CheckForm,
-        ShowValue,
         RadioContainer,
-        Words
+        WordsContainer,
+        TranslationsContainer
     }
 };
 </script>

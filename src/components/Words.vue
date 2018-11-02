@@ -10,10 +10,7 @@
 <script>
 export default {
     name: 'Words',
-    props: ['showWords', 'words'],
-    mounted() {
-        console.log('mounted', this.showWords, this.words)
-    }
+    props: ['showWords', 'words']
 }
 </script>
 
