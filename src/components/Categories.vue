@@ -27,7 +27,8 @@ export default {
   font-size: 15px;
 
   &__cat {
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
     color: black;
     background: white;
     padding: 3px;
