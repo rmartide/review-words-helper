@@ -1,5 +1,6 @@
 <template>
     <div class="review-container">
+        <Categories></Categories>
         <RadioContainer :name="name" v-model="radioValue" />
         <div class="row no-gutters">
             <div class="col-2">
@@ -20,6 +21,7 @@ import CheckForm from "@components/CheckForm.vue";
 import RadioContainer from "@components/RadioContainer.vue";
 import WordsContainer from "@components/WordsContainer.vue";
 import TranslationsContainer from "@components/TranslationsContainer.vue";
+import Categories from "@components/Categories.vue";
 
 export default {
     name: "Review",
@@ -33,11 +35,6 @@ export default {
             name: 'review-radio-keker',
             radioValue: 'both'
         };
-    },
-    filters: {
-        join(values) {
-            return values.join(", ");
-        }
     },
     watch: {
         radioValue(newValue) {
@@ -55,7 +52,8 @@ export default {
         CheckForm,
         RadioContainer,
         WordsContainer,
-        TranslationsContainer
+        TranslationsContainer,
+        Categories
     }
 };
 </script>
