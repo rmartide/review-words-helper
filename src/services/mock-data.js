@@ -1,12 +1,5 @@
 // This should be on a .json
-export const mockedData = [
-    { word: 'eindeutig', translations: ['obvio', 'inequivoco', 'indiscutible', 'indudable'] },
-    { word: 'selbstverständlich', translations: ['obvio', 'evidente', 'lógico'] },
-    { word: 'ausgezeichnet', translations: ['excelente', 'magnífico'] },
-    { word: 'tatsächlich', translations: ['efectivamente'] },
-    { word: 'begeister', translations: ['entusiasmado', 'impresionado'] },
-    { word: 'hoffen', translations: ['esperar'] },
-    { word: 'erweitern', translations: ['alargar', 'dilatar', 'estirar'] },
+const verbs = [
     { word: 'abonnieren', translations: ['suscribir', 'abonar'] },
     { word: 'akzeptieren', translations: ['aceptar'] },
     { word: 'arbeiten', translations: ['trabajar'] },
@@ -59,11 +52,108 @@ export const mockedData = [
     { word: 'zeigen', translations: ['enseñar', 'mostrar', 'transmitir'] },
     { word: 'ändern', translations: ['cambiar', 'modificar'] },
     { word: 'übernehmen', translations: ['hacerse cargo de', 'tomar las riendas'] }
-    // { word: '', translations: [''] },
 ]
+
+const separableVerbs = [
+    { word: 'anhalten', translations: ['detener', 'parar'] },
+    { word: 'anmachen', translations: ['encender'] },
+    { word: 'aufhalten', translations: ['retener'] },
+    { word: 'aufhören', translations: ['detener', 'terminar', 'acabar'] },
+    { word: 'aufmachen', translations: ['abrir'] },
+    { word: 'aufräumen', translations: ['limpiar'] },
+    { word: 'aufstehen', translations: ['levantarse'] },
+    { word: 'aufsteigen', translations: ['subir', 'montar'] },
+    { word: 'ausgehen', translations: ['salir'] },
+    { word: 'aussehen', translations: ['parecer'] },
+    { word: 'aussteigen', translations: ['bajar', 'salir'] },
+    { word: 'einsammeln', translations: ['recoger'] },
+    { word: 'eintreffen', translations: ['llegar'] },
+    { word: 'festhalten', translations: ['agarrar', 'detener'] },
+    { word: 'hören auf', translations: ['hacer caso'] },
+    { word: 'untergehen', translations: ['hundirse'] },
+    { word: 'vorstellen', translations: ['presentar'] },
+    { word: 'zumachen', translations: ['cerrar'] }
+]
+
+const predicativeAdjectives = [
+    { word: 'abhängig', translations: ['adicto', 'dependiente'] },
+    { word: 'aktiv', translations: ['activo'] },
+    { word: 'allgemein', translations: ['general/mente', 'común'] },
+    { word: 'ausgezeichnet', translations: ['excelente', 'magnífico'] },
+    { word: 'automatisch', translations: ['automático'] },
+    { word: 'begeister', translations: ['entusiasmado', 'impresionado'] },
+    { word: 'beliebt', translations: ['apreciada', 'popular'] },
+    { word: 'bereit', translations: ['listos'] },
+    { word: 'deutlich', translations: ['claro', 'claramente'] },
+    { word: 'echt', translations: ['de verdad', 'real', 'auténtico'] },
+    { word: 'egal', translations: ['da lo mismo', 'igual', 'no importa'] },
+    { word: 'eindeutig', translations: ['obvio', 'inequívoco', 'indiscutible', 'indudable'] },
+    { word: 'erneut', translations: ['nuevo'] },
+    { word: 'extrem', translations: ['extremadamente', 'extremo'] },
+    { word: 'falsch', translations: ['malo', 'falso'] },
+    { word: 'fertig', translations: ['cansado', 'rendido'] },
+    { word: 'fit', translations: ['en forma'] },
+    { word: 'herzlich', translations: ['cordial', 'afectuosa', 'cariñosa'] },
+    { word: 'hilfreich', translations: ['útil', 'beneficioso'] },
+    { word: 'höher', translations: ['más alto'] },
+    { word: 'individuell', translations: ['individual'] },
+    { word: 'international', translations: ['internacional'] },
+    { word: 'jung', translations: ['joven'] },
+    { word: 'jährlich', translations: ['anualmente', 'al año'] },
+    { word: 'kaputt', translations: ['roto', 'estropeado'] },
+    { word: 'knapp', translations: ['escasa', 'justa'] },
+    { word: 'komplett', translations: ['completamente'] },
+    { word: 'kürzlich', translations: ['recientemente', 'hace poco'] },
+    { word: 'leicht', translations: ['ligero'] },
+    { word: 'leichter', translations: ['más fácil', 'más liviano', 'más ligero'] },
+    { word: 'länger', translations: ['más largo'] },
+    { word: 'müde', translations: ['cansado'] },
+    { word: 'notwendig', translations: ['necesaria'] },
+    { word: 'offen', translations: ['abierto'] },
+    { word: 'original', translations: ['original'] },
+    { word: 'persönlich', translations: ['personal'] },
+    { word: 'plötzlich', translations: ['de pronto', 'repentino'] },
+    { word: 'privat', translations: ['en privado'] },
+    { word: 'regional', translations: ['regional', 'local'] },
+    { word: 'relativ', translations: ['relativo'] },
+    { word: 'ruhig', translations: ['tranquilo'] },
+    { word: 'schöner', translations: ['más bonito'] },
+    { word: 'selbst', translations: ['por sí mismo'] },
+    { word: 'selbstverständlich', translations: ['evidente', 'lógico', 'obvio'] },
+    { word: 'sichtvar', translations: ['visible'] },
+    { word: 'sinnvoll', translations: ['sensato'] },
+    { word: 'stärker', translations: ['más fuertes'] },
+    { word: 'tatsächlich', translations: ['efectivamente'] },
+    { word: 'täglich', translations: ['diariamente', 'a diario'] },
+    { word: 'unabhängig', translations: ['independiente'] },
+    { word: 'unbekannt', translations: ['desconocido'] },
+    { word: 'verantwortlich, zuständig', translations: ['responsable'] },
+    { word: 'verfügbar', translations: ['disponible'] },
+    { word: 'verpflichtet', translations: ['comprometido', 'obligado'] },
+    { word: 'verständ', translations: ['comprensible'] },
+    { word: 'völlig', translations: ['todo'] },
+    { word: 'wert', translations: ['vale'] },
+    { word: 'wesentlich', translations: ['esencial', 'fundamental'] },
+    { word: 'wirklich', translations: ['de verdad', 'realmente'] },
+    { word: 'zufrieden', translations: ['contento', 'satisfecho'] },
+    { word: 'ähnlich', translations: ['similar', 'parecida', 'semejante'] }
+]
+
+const separateWordAndTranslations = (data) => {
+    return {
+        words: data.map(row => row.word),
+        translations: data.map(row => row.translations)
+    }
+}
+
+export const data = {
+    Verbs: separateWordAndTranslations(verbs),
+    SeparableVerbs: separateWordAndTranslations(separableVerbs),
+    PredicativeAdjectives: separateWordAndTranslations(predicativeAdjectives),
+}
 
 // Bad practice to loop two times the same array
 export const mockedDictionary = {
-    words: mockedData.map(row => row.word),
-    translations: mockedData.map(row => row.translations)
+    words: verbs.map(row => row.word),
+    translations: verbs.map(row => row.translations)
 }

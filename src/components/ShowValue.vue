@@ -22,9 +22,9 @@ export default {
 <style lang="scss" scoped>
 .clickable {
   cursor: pointer;
-  padding: 5px;
   &:hover {
     font-weight: bold;
   }
+  display:block;
 }
 </style>
