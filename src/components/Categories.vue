@@ -1,6 +1,10 @@
 <template>
     <ul class="cat-container">
-        <li class="cat-container__cat" :class="{'cat-container__cat--selected': category === selectedCategory}" v-for="(category, index) in categories" :key="`${index}-${category}`" @click="selectedCategory = category">
+        <li class="cat-container__cat" 
+        :class="{'cat-container__cat--selected': category === value}" 
+        v-for="(category, index) in categories" 
+        :key="`${index}-${category}`" 
+        @click="$emit('input', category)">
             {{category}}
         </li>
     </ul>
@@ -8,16 +12,9 @@
 
 <script>
 
-const categories = ['Adjectives', 'Verbs', 'Clothes', 'Pronouns', 'Familie', 'Conjunctions', 'Domestic']
-
 export default {
     name: 'Categories',
-    data() {
-        return {
-            categories: categories,
-            selectedCategory: null
-        }
-    }
+    props: ['categories', 'value']
 }
 </script>
 
@@ -25,30 +22,26 @@ export default {
 .cat-container {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 16px;
   display: flex;
   font-size: 15px;
 
   &__cat {
-    border: 1px solid #d2d4d6;
+    border: 1px solid black;
+    color: black;
+    background: white;
     padding: 3px;
-    color: white;
-    background: grey;
     cursor: pointer;
     margin-right: 10px;
 
     &:hover {
-      background: #333333;
-    }
-
-    &:active {
-      background: blue;
+      background: #e2e2e2;
     }
 
     &--selected {
-      color: black;
-      background: white !important;
-      border-color: black;
+      color: white;
+      border: 1px solid #d2d4d6;
+      background: grey !important;
     }
   }
 }

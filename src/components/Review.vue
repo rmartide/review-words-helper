@@ -1,6 +1,7 @@
 <template>
     <div class="review-container">
-        <Categories></Categories>
+        [{{selectedCategory}}]
+        <Categories :categories="categories" v-model="selectedCategory"></Categories>
         <RadioContainer :name="name" v-model="radioValue" />
         <div class="row no-gutters">
             <div class="col-2">
@@ -23,6 +24,8 @@ import WordsContainer from "@components/WordsContainer.vue";
 import TranslationsContainer from "@components/TranslationsContainer.vue";
 import Categories from "@components/Categories.vue";
 
+const categories = ['Adjectives', 'Verbs', 'Clothes', 'Pronouns', 'Familie', 'Conjunctions', 'Domestic']
+
 export default {
     name: "Review",
     data() {
@@ -33,7 +36,9 @@ export default {
             showTranslations: false,
             radioName: "review-radio",
             name: 'review-radio-keker',
-            radioValue: 'both'
+            radioValue: 'both',
+            categories: categories,
+            selectedCategory: categories[0]
         };
     },
     watch: {
