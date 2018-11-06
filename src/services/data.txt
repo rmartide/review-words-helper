@@ -1,61 +1,65 @@
-fit - en forma
-kaputt - roto, estropeado
-komplett - completamente
-herzlich - cordial, afectuosa, cariñosa
-automatisch - automático
-echt - de verdad, real, auténtico
-erneut - nuevo
-müde - cansado
-relativ - relativo
-international - internacional
-eindeutig - obvio, inequívoco, indiscutible, indudable
-selbstverständlich - evidente, lógico, obvio
-selbst - por sí mismo 
-verständ - comprensible
-schöner - más bonito
-regional - regional, local
-wesentlich - esencial, fundamental
-täglich - diariamente, a diario
-jährlich - anualmente, al año
-kürzlich - recientemente, hace poco
-ruhig - tranquilo
-leichter - más fácil, más liviano, más ligero
-begeister - entusiasmado, impresionado
-beliebt - apreciada, popular
-verpflichtet - comprometido, obligado
-original - original
-persönlich - personal
-plötzlich - de pronto, repentino -> plötzlich sehe ich dich - de pronto te veo
-völlig - todo
-fertig - cansado, rendido
-jung - joven
-zufrieden - contento, satisfecho
-verfügbar - disponible
-aktiv - activo
-leicht - ligero
-abhängig - adicto, dependiente
-unabhängig - independiente	
-knapp - escasa, justa
-privat - en privado
-stärker - más fuertes
-bereit - listos
-höher - más alto
-wirklich - de verdad, realmente
-allgemein - general/mente, común
-individuell - individual
-tatsächlich - efectivamente
-verantwortlich, zuständig - responsable
-länger - más largo
-falsch - malo, falso
-ausgezeichnet - excelente, magnífico
-sinnvoll - sensato
-sichtvar - visible
-ähnlich - similar, parecida, semejante
-notwendig - necesaria
-extrem - extremadamente, extremo
-offen - abierto
-deutlich - claro, claramente
-hilfreich - útil, beneficioso
-unbekannt - desconocido
-egal - da lo mismo, igual, no importa
-wert - vale (valer)
+vielleicht - quizás
+ich heiße - me llamo
+wie heißen sie? - cómo se llama? formal
+wie ist ihr name? - cuál es su nombre? formal
+wie ist dein name? - cuál es tu nombre? informal
+wie heißt du? - cómo te llamas? informal
+wie heißt ihr? - cómo os llamais? informal
+guten tag - buen día
+guten morgen - buenos días
+guten abend - buenas tardes
+ich komme aus - vengo de
+ich wohne in - vivo en
+die ratte - la rata
+rechts - derechos
+die nachrichten - las noticias
+geradeus - recto
+die bäckerei - la panadería
+der druck - la presión
+draußen - fuera
+der preis - el precio
+die freiheit - la libertad
+die sprache - el lenguaje
+der schrank - el armario
+schreien - gritar
+kritisieren - criticar
+prima - bien
+das problem - el problema
+erklären - explicar
+verlieren - perder
+studieren - estudiar
+erwarten - esperar
+die wahrheit - la verdad
+gefährlich - peligroso
+hier - aquí
+das wetter - el tiempo
+der sommer - el verano
+der politiker - el político
+das meer - el océano
+das fußballspieler - el futbolista
+der sport - el deporte
+der berg - la montaña
+dort - allí
+er lernt viel - él estudia mucho
+die prüfung - el examen
+gerade - ahora
+lärm - ruido
+lernen - estudiar, aprender
+überstunden - horas extra
+pause - descanso
+apotheke (apoteca) - farmacia
+das fenster ist auf - la ventana está abierta
+die tür ist zu - la puerta está cerrada
+computer - computadora
+die lampe ist aus - la lámpara está apagada
+oben - arriba -> maria ist oben
+unten - debajo -> klaus ist unten
+da - allí -> ist klaus da?
+der külhschrank - el frigorífico
+der karton ist leer - la caja está vacía
+die kinder sind weg - los niños se han ido
+die treppe ist da hinten - las escaleras están allí detrás
+der aufzug ist da vorne - el ascensor está ahí enfrente
+der junge ist drinnen - el niño está dentro
+das mädchen ist draußen - la niña está fuera
+auch - también
