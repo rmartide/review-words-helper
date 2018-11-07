@@ -1,65 +1,39 @@
-vielleicht - quizás
-ich heiße - me llamo
-wie heißen sie? - cómo se llama? formal
-wie ist ihr name? - cuál es su nombre? formal
-wie ist dein name? - cuál es tu nombre? informal
-wie heißt du? - cómo te llamas? informal
-wie heißt ihr? - cómo os llamais? informal
-guten tag - buen día
-guten morgen - buenos días
-guten abend - buenas tardes
-ich komme aus - vengo de
-ich wohne in - vivo en
-die ratte - la rata
-rechts - derechos
-die nachrichten - las noticias
-geradeus - recto
-die bäckerei - la panadería
-der druck - la presión
-draußen - fuera
-der preis - el precio
-die freiheit - la libertad
-die sprache - el lenguaje
-der schrank - el armario
-schreien - gritar
-kritisieren - criticar
-prima - bien
-das problem - el problema
-erklären - explicar
-verlieren - perder
-studieren - estudiar
-erwarten - esperar
-die wahrheit - la verdad
-gefährlich - peligroso
-hier - aquí
-das wetter - el tiempo
-der sommer - el verano
-der politiker - el político
-das meer - el océano
-das fußballspieler - el futbolista
-der sport - el deporte
-der berg - la montaña
-dort - allí
-er lernt viel - él estudia mucho
-die prüfung - el examen
-gerade - ahora
-lärm - ruido
-lernen - estudiar, aprender
-überstunden - horas extra
-pause - descanso
-apotheke (apoteca) - farmacia
-das fenster ist auf - la ventana está abierta
-die tür ist zu - la puerta está cerrada
-computer - computadora
-die lampe ist aus - la lámpara está apagada
-oben - arriba -> maria ist oben
-unten - debajo -> klaus ist unten
-da - allí -> ist klaus da?
-der külhschrank - el frigorífico
-der karton ist leer - la caja está vacía
-die kinder sind weg - los niños se han ido
-die treppe ist da hinten - las escaleras están allí detrás
-der aufzug ist da vorne - el ascensor está ahí enfrente
-der junge ist drinnen - el niño está dentro
-das mädchen ist draußen - la niña está fuera
-auch - también
+das auge - el ojo
+das bein - la pierna
+das blut - la sangre
+das formular - el formulario
+das gesicht - la cara
+das haar - el pelo ** ich zieh ein Haar - me arranco un pelo
+das herz - el corazón
+das krankenhaus - el hospital
+das medikament - el medicamento
+das opfer - la víctima
+der Fuß - el pie
+der alkohol - el alcohol
+der finger - el dedo
+der hals - el cuello
+der kopf - la cabeza
+der krankenwagen - la ambulancia
+der körper - el cuerpo
+der notfall - la emergencia
+der patient - el paciente
+der unfall - el accidente
+die beine - las piernas
+die diät - la dieta
+die ernährung - la alimentación
+die füße - los pies
+die geburt - el nacimiento, parto
+die gesundheit - la salud
+die haare - el pelo ** magst du meine Haare? - te gusta mi pelo?
+die hand - la mano
+die haut - la piel
+die klinik - la clínica
+die krankenversicherung - el seguro de enfermedad
+die krankheit - la enfermedad
+die medizin - la medicina
+die pflege - el cuidado, la asistencia
+die praxis - el consultorio
+die sucht - la adicción
+die therapie - la terapia
+die untersuchung - el examen, análisis, chequeo
+krank - enfermo

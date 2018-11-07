@@ -139,6 +139,48 @@ const predicativeAdjectives = [
     { word: 'ähnlich', translations: ['similar', 'parecida', 'semejante'] }
 ]
 
+const medicine = [
+    { word: 'das auge', translations: ['el ojo'] },
+    { word: 'das bein', translations: ['la pierna'] },
+    { word: 'das blut', translations: ['la sangre'] },
+    { word: 'das formular', translations: ['el formulario'] },
+    { word: 'das gesicht', translations: ['la cara'] },
+    { word: 'das haar', translations: ['el pelo'] },
+    { word: 'das herz', translations: ['el corazón'] },
+    { word: 'das krankenhaus', translations: ['el hospital'] },
+    { word: 'das medikament', translations: ['el medicamento'] },
+    { word: 'das opfer', translations: ['la víctima'] },
+    { word: 'der Fuß', translations: ['el pie'] },
+    { word: 'der alkohol', translations: ['el alcohol'] },
+    { word: 'der finger', translations: ['el dedo'] },
+    { word: 'der hals', translations: ['el cuello'] },
+    { word: 'der kopf', translations: ['la cabeza'] },
+    { word: 'der krankenwagen', translations: ['la ambulancia'] },
+    { word: 'der körper', translations: ['el cuerpo'] },
+    { word: 'der notfall', translations: ['la emergencia'] },
+    { word: 'der patient', translations: ['el paciente'] },
+    { word: 'der unfall', translations: ['el accidente'] },
+    { word: 'die beine', translations: ['las piernas'] },
+    { word: 'die diät', translations: ['la dieta'] },
+    { word: 'die ernährung', translations: ['la alimentación'] },
+    { word: 'die füße', translations: ['los pies'] },
+    { word: 'die geburt', translations: ['el nacimiento', 'parto'] },
+    { word: 'die gesundheit', translations: ['la salud'] },
+    { word: 'die haare', translations: ['el pelo'] },
+    { word: 'die hand', translations: ['la mano'] },
+    { word: 'die haut', translations: ['la piel'] },
+    { word: 'die klinik', translations: ['la clínica'] },
+    { word: 'die krankenversicherung', translations: ['el seguro de enfermedad'] },
+    { word: 'die krankheit', translations: ['la enfermedad'] },
+    { word: 'die medizin', translations: ['la medicina'] },
+    { word: 'die pflege', translations: ['el cuidado', 'la asistencia'] },
+    { word: 'die praxis', translations: ['el consultorio'] },
+    { word: 'die sucht', translations: ['la adicción'] },
+    { word: 'die therapie', translations: ['la terapia'] },
+    { word: 'die untersuchung', translations: ['el examen', 'análisis', 'chequeo'] },
+    { word: 'krank', translations: ['enfermo'] }
+]
+
 const separateWordAndTranslations = (data) => {
     return {
         words: data.map(row => row.word),
@@ -150,6 +192,7 @@ export const data = {
     Verbs: separateWordAndTranslations(verbs),
     SeparableVerbs: separateWordAndTranslations(separableVerbs),
     PredicativeAdjectives: separateWordAndTranslations(predicativeAdjectives),
+    Medicine: separateWordAndTranslations(medicine)
 }
 
 // Bad practice to loop two times the same array
