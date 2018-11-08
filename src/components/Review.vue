@@ -1,9 +1,16 @@
 <template>
-    <div class="review-container">
-        <Categories :categories="categories" v-model="selectedCategory"></Categories>
-        <RadioContainer :name="name" v-model="radioValue" />
-        <div class="row no-gutters">
-            <div class="col-2">
+    <div>
+        <div class="d-flex justify-content-center">
+            <button @click="swapperoni()">Swapperoni Mixeroni</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <Categories :categories="categories" v-model="selectedCategory"></Categories>
+        </div>
+        <div class="d-flex justify-content-center">
+            <RadioContainer :name="name" v-model="radioValue" />
+        </div>
+        <div class="row no-gutters justify-content-center">
+            <div class="col-3">
                 <WordsContainer :showWords="showWords" :words="words"></WordsContainer>
             </div>
             <div class="col-3">
@@ -61,6 +68,11 @@ export default {
         },
         translations() {
             return data[this.selectedCategory].translations;
+        }
+    },
+    methods: {
+        swapperoni() {
+            console.log('yap')
         }
     }
 };
