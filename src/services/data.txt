@@ -1,39 +1,65 @@
-das auge - el ojo
-das bein - la pierna
-das blut - la sangre
-das formular - el formulario
-das gesicht - la cara
-das haar - el pelo ** ich zieh ein Haar - me arranco un pelo
-das herz - el corazón
-das krankenhaus - el hospital
-das medikament - el medicamento
-das opfer - la víctima
-der Fuß - el pie
-der alkohol - el alcohol
-der finger - el dedo
-der hals - el cuello
-der kopf - la cabeza
-der krankenwagen - la ambulancia
-der körper - el cuerpo
-der notfall - la emergencia
-der patient - el paciente
-der unfall - el accidente
-die beine - las piernas
-die diät - la dieta
-die ernährung - la alimentación
-die füße - los pies
-die geburt - el nacimiento, parto
-die gesundheit - la salud
-die haare - el pelo ** magst du meine Haare? - te gusta mi pelo?
-die hand - la mano
-die haut - la piel
-die klinik - la clínica
-die krankenversicherung - el seguro de enfermedad
-die krankheit - la enfermedad
-die medizin - la medicina
-die pflege - el cuidado, la asistencia
-die praxis - el consultorio
-die sucht - la adicción
-die therapie - la terapia
-die untersuchung - el examen, análisis, chequeo
-krank - enfermo
+apotheke (apoteca) - farmacia
+auch - también
+computer - computadora
+da - allí -> ist klaus da?
+das fenster ist auf - la ventana está abierta
+das fußballspieler - el futbolista
+das meer - el océano
+das mädchen ist draußen - la niña está fuera
+das problem - el problema
+das wetter - el tiempo
+der aufzug ist da vorne - el ascensor está ahí enfrente
+der berg - la montaña
+der druck - la presión
+der junge ist drinnen - el niño está dentro
+der karton ist leer - la caja está vacía
+der külhschrank - el frigorífico
+der politiker - el político
+der preis - el precio
+der schrank - el armario
+der sommer - el verano
+der sport - el deporte
+die bäckerei - la panadería
+die freiheit - la libertad
+die kinder sind weg - los niños se han ido
+die lampe ist aus - la lámpara está apagada
+die nachrichten - las noticias
+die prüfung - el examen
+die ratte - la rata
+die sprache - el lenguaje
+die treppe ist da hinten - las escaleras están allí detrás
+die tür ist zu - la puerta está cerrada
+die wahrheit - la verdad
+dort - allí
+draußen - fuera
+er lernt viel - él estudia mucho
+erklären - explicar
+erwarten - esperar
+gefährlich - peligroso
+gerade - ahora
+geradeus - recto
+guten abend - buenas tardes
+guten morgen - buenos días
+guten tag - buen día
+hier - aquí
+ich heiße - me llamo
+ich komme aus - vengo de
+ich wohne in - vivo en
+kritisieren - criticar
+lernen - estudiar, aprender
+lärm - ruido
+oben - arriba -> maria ist oben
+pause - descanso
+prima - bien
+rechts - derechos
+schreien - gritar
+studieren - estudiar
+unten - debajo -> klaus ist unten
+verlieren - perder
+vielleicht - quizás
+wie heißen sie? - cómo se llama? formal
+wie heißt du? - cómo te llamas? informal
+wie heißt ihr? - cómo os llamais? informal
+wie ist dein name? - cuál es tu nombre? informal
+wie ist ihr name? - cuál es su nombre? formal
+überstunden - horas extra

@@ -27,6 +27,8 @@ import RadioContainer from "@components/RadioContainer.vue";
 import WordsContainer from "@components/WordsContainer.vue";
 import TranslationsContainer from "@components/TranslationsContainer.vue";
 import Categories from "@components/Categories.vue";
+import Utils from '@services/utils';
+import Vue from 'vue';
 
 const categories = Object.keys(data);
 
@@ -72,7 +74,10 @@ export default {
     },
     methods: {
         swapperoni() {
-            console.log('yap')
+            let {words, translations} = data[this.selectedCategory];
+            Utils.shuffle(words, translations);
+            data[this.selectedCategory].words = words;
+            data[this.selectedCategory].translations = translations; 
         }
     }
 };
