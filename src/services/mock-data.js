@@ -249,23 +249,10 @@ const newPalabros = [
     { word: 'überstunden', translations: ['horas extra'] }
 ]
 
-const separateWordAndTranslations = (data) => {
-    return {
-        words: data.map(row => row.word),
-        translations: data.map(row => row.translations)
-    }
-}
-
 export const data = {
-    Verbs: separateWordAndTranslations(verbs),
-    SeparableVerbs: separateWordAndTranslations(separableVerbs),
-    PredicativeAdjectives: separateWordAndTranslations(predicativeAdjectives),
-    Medicine: separateWordAndTranslations(medicine),
-    NewPalabros: separateWordAndTranslations(newPalabros),
-}
-
-// Bad practice to loop two times the same array
-export const mockedDictionary = {
-    words: verbs.map(row => row.word),
-    translations: verbs.map(row => row.translations)
+    Verbs: verbs,
+    SeparableVerbs: separableVerbs,
+    PredicativeAdjectives: predicativeAdjectives,
+    Medicine: medicine,
+    NewPalabros: newPalabros,
 }

@@ -9,12 +9,12 @@
         <div class="d-flex justify-content-center">
             <RadioContainer :name="name" v-model="radioValue" />
         </div>
-        <div class="row no-gutters justify-content-center">
-            <div class="col-3">
-                <WordsContainer :showWords="showWords" :words="words"></WordsContainer>
+        <div class="row no-gutters justify-content-center" v-for="(dc, index) in data[this.selectedCategory]" :key="`w-${index}-${dc.word}`">
+            <div class="col-3 separator">
+                <Display :value="dc.word" :show="showWords"></Display>
             </div>
-            <div class="col-3">
-                <TranslationsContainer :showTranslations="showTranslations" :translations="translations"></TranslationsContainer>
+            <div class="col-3 separator">
+                <Display :value="dc.translations.join(', ')" :show="showTranslations"></Display>
             </div>
         </div>
     </div>
@@ -24,9 +24,8 @@
 import { mockedDictionary, data } from "@services/mock-data";
 import CheckForm from "@components/CheckForm.vue";
 import RadioContainer from "@components/RadioContainer.vue";
-import WordsContainer from "@components/WordsContainer.vue";
-import TranslationsContainer from "@components/TranslationsContainer.vue";
 import Categories from "@components/Categories.vue";
+import Display from "@components/Display.vue";
 import Utils from '@services/utils';
 import Vue from 'vue';
 
@@ -36,23 +35,26 @@ export default {
     name: "Review",
     data() {
         return {
-            showWords: false,
-            showTranslations: false,
+            showWords: true,
+            showTranslations: true,
             radioName: "review-radio",
             name: 'review-radio-keker',
             radioValue: 'both',
             categories: categories,
-            selectedCategory: categories[0]
+            selectedCategory: categories[0],
+            data: data
         };
     },
     watch: {
         radioValue(newValue) {
             switch (newValue) {
-                case 'both': this.showWords = this.showTranslations = false;
+                case 'both': this.showWords = this.showTranslations = true;
                     break;
-                case 'words': this.showWords = true; this.showTranslations = false;
+                case 'words': this.showWords = false;
+                    this.showTranslations = true;
                     break;
-                case 'translations': this.showWords = false; this.showTranslations = true;
+                case 'translations': this.showWords = true;
+                    this.showTranslations = false;
                     break;
             }
         }
@@ -60,28 +62,20 @@ export default {
     components: {
         CheckForm,
         RadioContainer,
-        WordsContainer,
-        TranslationsContainer,
-        Categories
-    },
-    computed: {
-        words() {
-            return data[this.selectedCategory].words;
-        },
-        translations() {
-            return data[this.selectedCategory].translations;
-        }
+        Categories,
+        Display
     },
     methods: {
         swapperoni() {
-            let {words, translations} = data[this.selectedCategory];
-            Utils.shuffle(words, translations);
-            data[this.selectedCategory].words = words;
-            data[this.selectedCategory].translations = translations; 
+            const swapped = Utils.shuffle(data[this.selectedCategory].slice());
+            data[this.selectedCategory] = swapped;
         }
     }
 };
 </script>
 
 <style>
+.separator {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 </style>
