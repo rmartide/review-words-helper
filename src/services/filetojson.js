@@ -10,7 +10,7 @@ fs.readFile(path.resolve(__dirname,'./data.txt'),'utf8', (err, data) => {
         const template = `{word: '${word}', translations:[${translations}]}`;
         result.push(template);
     }
-    console.log(result.sort().join(',\n'));
+    process.stdout.write(`${result.sort().join(',\n')}\n`); 
 });
 
 function removeEnter(string) {

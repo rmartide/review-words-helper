@@ -4,12 +4,12 @@
             <button @click="swapperoni()">Swapperoni Mixeroni</button>
         </div>
         <div class="d-flex justify-content-center">
-            <Categories :categories="categories" v-model="selectedCategory"></Categories>
+            <Categories :categories="categories" v-model="selectedCategory" @input.capture="missed=[]"></Categories>
         </div>
         <div class="d-flex justify-content-center">
             <RadioContainer :name="name" v-model="radioValue" />
         </div>
-        <div class="row no-gutters justify-content-center" v-for="(dc, index) in data[this.selectedCategory]" :key="`w-${index}-${dc.word}`">
+        <div class="row no-gutters justify-content-center" v-for="(dc, index) in data[selectedCategory]" :key="`w-${index}-${dc.word}`" @click="addToMissed(dc)">
             <div class="col-3 separator">
                 <Display :value="dc.word" :show="showWords"></Display>
             </div>
@@ -17,17 +17,32 @@
                 <Display :value="dc.translations.join(', ')" :show="showTranslations"></Display>
             </div>
         </div>
+        <div v-if="missed.length !== 0">
+            <div class="row no-gutters">
+                <h5 class="offset-3">Failed when reviewing</h5>
+            </div>
+            <div class="d-flex justify-content-center">
+                <RadioContainer :name="name" v-model="radioValue" />
+            </div>
+            <div class="row no-gutters justify-content-center" v-for="(dc, index) in missed" :key="`w-${index}-${dc.word}`">
+                <div class="col-3 separator">
+                    <Display :value="dc.word" :show="showWords"></Display>
+                </div>
+                <div class="col-3 separator">
+                    <Display :value="dc.translations.join(', ')" :show="showTranslations"></Display>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-import { mockedDictionary, data } from "@services/mock-data";
+import { data } from "@services/mock-data";
 import CheckForm from "@components/CheckForm.vue";
 import RadioContainer from "@components/RadioContainer.vue";
 import Categories from "@components/Categories.vue";
 import Display from "@components/Display.vue";
 import Utils from '@services/utils';
-import Vue from 'vue';
 
 const categories = Object.keys(data);
 
@@ -42,7 +57,8 @@ export default {
             radioValue: 'both',
             categories: categories,
             selectedCategory: categories[0],
-            data: data
+            data: data,
+            missed: []
         };
     },
     watch: {
@@ -69,6 +85,10 @@ export default {
         swapperoni() {
             const swapped = Utils.shuffle(data[this.selectedCategory].slice());
             data[this.selectedCategory] = swapped;
+        },
+        addToMissed(dc) {
+            if (this.missed.indexOf(dc) === -1)
+                this.missed.push(dc);
         }
     }
 };

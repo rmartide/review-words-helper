@@ -28,7 +28,8 @@ const verbs = [
     { word: 'liegen', translations: ['estar ubicado', 'estar tendido'] },
     { word: 'machen', translations: ['hacer'] },
     { word: 'meinen', translations: ['pensar', 'opinar'] },
-    { word: 'möchten', translations: ['gusta'] },
+    { word: 'mögen', translations: ['querer, gustar'] },
+    { word: 'möchte', translations: ['querría'] },
     { word: 'nehmen', translations: ['tomar', 'coger'] },
     { word: 'passieren', translations: ['pasar', 'suceder', 'ocurrir'] },
     { word: 'prüfen', translations: ['revisar', 'controlar', 'probar'] },
@@ -249,10 +250,35 @@ const newPalabros = [
     { word: 'überstunden', translations: ['horas extra'] }
 ]
 
+const feelings = [
+    { word: 'das glück', translations: ['la suerte'] },
+    { word: 'das verständnis', translations: ['el entendimiento'] },
+    { word: 'der Spaß', translations: ['la diversión'] },
+    { word: 'der eindruck', translations: ['la impresión'] },
+    { word: 'der gedanke', translations: ['el pensamiento', 'idea'] },
+    { word: 'der humor', translations: ['el humor'] },
+    { word: 'der traum', translations: ['el sueño'] },
+    { word: 'der wunsch', translations: ['el deseo'] },
+    { word: 'die angst', translations: ['el miedo'] },
+    { word: 'die freude', translations: ['la alegría'] },
+    { word: 'die idee', translations: ['la idea'] },
+    { word: 'die liebe', translations: ['el amor'] },
+    { word: 'die lust', translations: ['las ganas'] },
+    { word: 'die not', translations: ['la necesidad'] },
+    { word: 'die ruhe', translations: ['la calma', 'tranquilidad', 'silencio'] },
+    { word: 'die wünsche', translations: ['los deseos'] },
+    { word: 'es ist mein Ernst', translations: ['lo digo en serio'] },
+    { word: 'im ernst?', translations: ['en serio?'] },
+    { word: 'träumen', translations: ['soñar'] },
+    { word: 'unheimlich', translations: ['tenebroso', 'inquietante'] },
+    { word: 'witzig', translations: ['gracioso'] }
+]
+
 export const data = {
     Verbs: verbs,
-    SeparableVerbs: separableVerbs,
-    PredicativeAdjectives: predicativeAdjectives,
+    "Separable Verbs": separableVerbs,
+    "Predicative Adjectives": predicativeAdjectives,
     Medicine: medicine,
-    NewPalabros: newPalabros,
+    "New Palabros": newPalabros,
+    Feelings: feelings
 }
