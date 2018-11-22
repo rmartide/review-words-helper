@@ -274,11 +274,89 @@ const feelings = [
     { word: 'witzig', translations: ['gracioso'] }
 ]
 
+const dates = [
+    { word: 'Weihnachten steht vor der Tür', translations: ['la navidad está a punto de llegar'] },
+    { word: 'alter', translations: ['edad', 'vejez'] },
+    { word: 'das 18. jahrhundert', translations: ['el siglo XVIII'] },
+    { word: 'das datum', translations: ['la fecha'] },
+    { word: 'das ende', translations: ['el fin'] },
+    { word: 'das quartal', translations: ['el trimestre'] },
+    { word: 'das weihnachten', translations: ['la navidad'] },
+    { word: 'das wochenende', translations: ['el fin de semana'] },
+    { word: 'der abend', translations: ['la tarde'] },
+    { word: 'der alltag', translations: ['la vida cotidiana', 'el día a día', 'la rutina'] },
+    { word: 'der geburtstag', translations: ['el cumpleaños'] },
+    { word: 'der kalender', translations: ['el calendario'] },
+    { word: 'der mittag', translations: ['el mediodía'] },
+    { word: 'der moment', translations: ['el momento'] },
+    { word: 'der monat', translations: ['el mes'] },
+    { word: 'der morgen', translations: ['la mañana'] },
+    { word: 'der termin', translations: ['el plazo', 'la fecha', 'la cita'] },
+    { word: 'der zeitpunkt', translations: ['el momento'] },
+    { word: 'der zeitraum', translations: ['el periodo'] },
+    { word: 'die dauer', translations: ['la duración'] },
+    { word: 'die letzte', translations: ['el último'] },
+    { word: 'die minute', translations: ['el minuto'] },
+    { word: 'die nacht', translations: ['la noche'] },
+    { word: 'die phase', translations: ['la fase', 'la etapa'] },
+    { word: 'die saison', translations: ['la temporada'] },
+    { word: 'die sekunde', translations: ['el segundo'] },
+    { word: 'die stunde', translations: ['la hora'] },
+    { word: 'die uhr', translations: ['la hora', 'el reloj'] },
+    { word: 'die uhrzeit', translations: ['la hora'] },
+    { word: 'die vergangenheit', translations: ['el pasado'] },
+    { word: 'die woche', translations: ['la semana'] },
+    { word: 'die zeit', translations: ['el tiempo'] },
+    { word: 'die zukunft', translations: ['el futuro'] },
+    { word: 'im moment', translations: ['de momento'] },
+    { word: 'jahrhundert', translations: ['siglo'] },
+    { word: 'monate', translations: ['meses'] },
+    { word: 'urlaub', translations: ['vacaciones'] },
+    { word: 'wochen', translations: ['semanas'] }
+]
+
+const weekDays = [
+    { word: 'montag', translations: ['lunes'] },
+    { word: 'dienstag', translations: ['martes'] },
+    { word: 'mittwoch', translations: ['miércoles'] },
+    { word: 'donnerstag', translations: ['jueves'] },
+    { word: 'freitag', translations: ['viernes'] },
+    { word: 'samstag', translations: ['sábado'] },
+    { word: 'sonntag', translations: ['domingo'] }
+]
+
+const months = [
+    { word: 'der Januar', translations: ['enero'] },
+    { word: 'der Februar', translations: ['febrero'] },
+    { word: 'der März', translations: ['marzo'] },
+    { word: 'der April', translations: ['abril'] },
+    { word: 'der Mai', translations: ['mayo'] },
+    { word: 'der Juni', translations: ['junio'] },
+    { word: 'der Juli', translations: ['julio'] },
+    { word: 'der August', translations: ['agosto'] },
+    { word: 'der September', translations: ['septiembre'] },
+    { word: 'der Oktober', translations: ['octubre'] },
+    { word: 'der November', translations: ['noviembre'] },
+    { word: 'der Dezember', translations: ['diciembre'] },
+    { word: 'im mes', translations: ['en mes'] }
+]
+
+const seasons = [
+    { word: 'der Frühling', translations: ['la primavera'] },
+    { word: 'der Sommer', translations: ['el verano'] },
+    { word: 'der Herbst', translations: ['el otoño'] },
+    { word: 'der Winter', translations: ['el invierno'] }
+]
+
 export const data = {
     Verbs: verbs,
     "Separable Verbs": separableVerbs,
     "Predicative Adjectives": predicativeAdjectives,
     Medicine: medicine,
     "New Palabros": newPalabros,
-    Feelings: feelings
+    Feelings: feelings,
+    "Dates and Time": dates,
+    "Wochentage": weekDays,
+    "Monate": months,
+    "Jahreszeiten": seasons
 }

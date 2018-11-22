@@ -1,21 +1,38 @@
-die liebe - el amor
-der traum - el sueño
-der wunsch - el deseo
-die wünsche - los deseos	
-träumen - soñar
-die lust - las ganas
-die freude - la alegría
-die not - la necesidad
-der humor - el humor
-im ernst? - en serio?
-der eindruck - la impresión
-die angst - el miedo
-unheimlich - tenebroso, inquietante
-das verständnis - el entendimiento
-der Spaß - la diversión
-es ist mein Ernst - lo digo en serio
-der gedanke - el pensamiento, idea
-die idee - la idea
-witzig - gracioso
-die ruhe - la calma, tranquilidad, silencio
-das glück - la suerte ** Zum Glück haben wir Wasser - Por suerte tenemos agua
+die uhr - la hora, el reloj
+die uhrzeit - la hora
+der abend - la tarde
+der morgen - la mañana
+die nacht - la noche
+die zeit - el tiempo
+die stunde - la hora
+die minute - el minuto
+die sekunde - el segundo
+der mittag - el mediodía
+der termin - el plazo, la fecha, la cita (médico)
+die phase - la fase, la etapa
+wochen - semanas
+monate - meses
+die woche - la semana
+der monat - el mes
+der kalender - el calendario
+die letzte - el último
+die saison - la temporada
+urlaub - vacaciones
+jahrhundert - siglo
+das 18. jahrhundert - el siglo XVIII
+die zukunft - el futuro
+die vergangenheit - el pasado
+der moment - el momento
+im moment - de momento
+das weihnachten - la navidad
+Weihnachten steht vor der Tür - la navidad está a punto de llegar
+das ende - el fin
+der zeitpunkt - el momento
+der geburtstag - el cumpleaños
+das quartal - el trimestre
+das wochenende - el fin de semana
+alter - edad, vejez
+das datum - la fecha
+der alltag - la vida cotidiana, el día a día, la rutina
+die dauer - la duración
+der zeitraum - el periodo
