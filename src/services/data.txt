@@ -1,38 +1,26 @@
-die uhr - la hora, el reloj
-die uhrzeit - la hora
-der abend - la tarde
-der morgen - la mañana
-die nacht - la noche
-die zeit - el tiempo
-die stunde - la hora
-die minute - el minuto
-die sekunde - el segundo
-der mittag - el mediodía
-der termin - el plazo, la fecha, la cita (médico)
-die phase - la fase, la etapa
-wochen - semanas
-monate - meses
-die woche - la semana
-der monat - el mes
-der kalender - el calendario
-die letzte - el último
-die saison - la temporada
-urlaub - vacaciones
-jahrhundert - siglo
-das 18. jahrhundert - el siglo XVIII
-die zukunft - el futuro
-die vergangenheit - el pasado
-der moment - el momento
-im moment - de momento
-das weihnachten - la navidad
-Weihnachten steht vor der Tür - la navidad está a punto de llegar
-das ende - el fin
-der zeitpunkt - el momento
-der geburtstag - el cumpleaños
-das quartal - el trimestre
-das wochenende - el fin de semana
-alter - edad, vejez
-das datum - la fecha
-der alltag - la vida cotidiana, el día a día, la rutina
-die dauer - la duración
-der zeitraum - el periodo
+A - A
+B - B
+C - Se
+D - D
+E - E
+F - Ef
+G - Gue
+H - Ja
+I - I
+J - Yot
+K - K
+L - El
+M - Em
+N - En
+O - O
+P - P
+Q - Q
+R - Er
+S - Es
+T - Ti
+U - U
+V - Fau
+W - B
+X - Ix
+Y - Ypsilon/Üpsilon
+Z - tset

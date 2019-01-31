@@ -2,12 +2,13 @@
     <div>
         <div class="d-flex justify-content-center">
             <button @click="swapperoni()">Swapperoni Mixeroni</button>
+            {{radioValue}}
         </div>
         <div class="d-flex justify-content-center">
             <Categories :categories="categories" v-model="selectedCategory" @input.capture="missed=[]"></Categories>
         </div>
         <div class="d-flex justify-content-center">
-            <RadioContainer :name="name" v-model="radioValue" />
+            <RadioContainer name="main-radio" v-model="radioValue" />
         </div>
         <div class="row no-gutters justify-content-center" v-for="(dc, index) in data[selectedCategory]" :key="`w-${index}-${dc.word}`" @click="addToMissed(dc)">
             <div class="col-3 separator">
@@ -22,7 +23,7 @@
                 <h5 class="offset-3">Failed when reviewing</h5>
             </div>
             <div class="d-flex justify-content-center">
-                <RadioContainer :name="name" v-model="radioValue" />
+                <RadioContainer name="missed-radio" v-model="radioValue" />
             </div>
             <div class="row no-gutters justify-content-center" v-for="(dc, index) in missed" :key="`w-${index}-${dc.word}`">
                 <div class="col-3 separator">
@@ -52,8 +53,6 @@ export default {
         return {
             showWords: true,
             showTranslations: true,
-            radioName: "review-radio",
-            name: 'review-radio-keker',
             radioValue: 'both',
             categories: categories,
             selectedCategory: categories[0],
