@@ -8,5 +8,6 @@ module.exports = {
                 "@services": path.resolve(__dirname, 'src/services')
             }
         }
-    }
+    },
+    publicPath: process.env.NODE_ENV === "production" ? `/${process.env.CI_PROJECT_NAME}/` : "/"
 }
