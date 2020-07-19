@@ -1,8 +1,7 @@
 <template>
     <div>
         <div class="d-flex justify-content-center">
-            <button @click="swapperoni()">Swapperoni Mixeroni</button>
-            {{radioValue}}
+            <button @click="swapperoni()">Shuffle</button>
         </div>
         <div class="d-flex justify-content-center">
             <Categories :categories="categories" v-model="selectedCategory" @input.capture="missed=[]"></Categories>
